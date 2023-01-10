@@ -5,7 +5,7 @@ import zodToJsonSchema from "https://esm.sh/zod-to-json-schema@3.17.0";
 
 function input(objSchema) {
   const schema = z.object(objSchema);
-  return $recv(zodToJsonSchema(schema));
+  return $recv(zodToJsonSchema(schema, "until_input"));
 }
 
 function number(...args) {
