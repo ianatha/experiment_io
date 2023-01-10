@@ -20,7 +20,7 @@ function object(...args) {
   return z.object(...args);
 }
 
-export {
+export default {
   input,
   number,
   string,
